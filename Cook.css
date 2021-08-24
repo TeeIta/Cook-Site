@@ -1,0 +1,775 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Cook/Resources/pexels-ready-made-3850838.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.Logo {
+    position: absolute;
+    font-size: 30px;
+    text-decoration: overline #ffff00;
+    margin-top: 2%;
+    left: 4%;
+    color: #fff;
+}
+
+.OO_logo {
+    color: #ffff00;
+    font-weight: bolder;
+}
+
+.nav-a {
+    flex: 1;
+    text-align: center;
+    margin-left: 16%;
+}
+
+.nav-a ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+    padding: 40px 30px;
+}
+
+.nav-a ul {
+    display: inline;
+    padding: 8px 25px;
+    list-style: none;
+}
+
+.nav-a ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffff00;
+    display: block;
+    transition: .5s;
+}
+
+.nav-a ul li:hover::after {
+    width: 100%;
+}
+
+.sign {
+    padding: 10px 12px;
+    background: #ff0;
+    letter-spacing: 2px;
+    border: 0;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-a .sign {
+    float: right;
+    position: relative;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.sign:hover {
+    color: #484800;
+    background: #fff;
+}
+
+.login {
+    letter-spacing: 2px;
+    padding: 10px 12px;
+    background: #ffff00;
+    border: 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.nav-a .login {
+    width: 95px;
+    float: right;
+    position: relative;
+    margin-top: 2%;
+    margin-right: 2%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.login:hover {
+    color: #484800;
+    background: #fff;
+}
+
+.text {
+    margin: 10% 4%;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.general_text {
+    font-size: 45px;
+}
+
+.rel {
+    color: #ffff00;
+}
+
+.Religion-food {
+    color: #ffff00;
+}
+
+.Explore-button {
+    border: 0;
+    font-weight: bold;
+    padding: 10px 12px;
+    background: #ffff00;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Explore-button:hover {
+    background: #fff;
+    color: #ffff00;
+}
+
+.Order-button {
+    border: 0;
+    width: 100px;
+    font-weight: bold;
+    padding: 10px 12px;
+    background: #ffff00;
+    margin-left: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Order-button:hover {
+    background: #fff;
+    color: #ffff00;
+}
+
+.Foods-religion {
+    position: relative;
+    margin-left: 415px;
+    font-weight: bold;
+    top: 40px;
+    color: #3e3e3e;
+    font-size: 45px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.Food_Concept {
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255, 209, 4, 0.945);
+}
+
+
+/* Card_One Starts */
+
+.card {
+    width: 300px;
+    margin-left: 5%;
+    margin-top: 90px;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "image" "text" "stats";
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_image {
+    grid-area: image;
+    background: url(../Cook/Resources/pexels-ella-olsson-1640777.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card_text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card_text .date {
+    color: rgb(7, 190, 7);
+    font-size: 13px;
+}
+
+.card_text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card_text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card_stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(7, 190, 7);
+}
+
+.card_stats .stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+.card_stats .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card_stats .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card_stats .border {
+    border-left: 1px solid rgb(7, 190, 7);
+    border-right: 1px solid rgb(7, 190, 7);
+}
+
+.card_stats .value sup {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Card_One Ends */
+
+
+/* Card 2 Starts */
+
+.card2 {
+    width: 300px;
+    margin-left: 38%;
+    margin-top: -500px;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "image" "text" "stats";
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_image2 {
+    grid-area: image;
+    background: url(../Cook/Resources/burger.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card_text2 {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card_text2 .date2 {
+    color: rgb(7, 190, 7);
+    font-size: 13px;
+}
+
+.card_text2 h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card_stats2 {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(7, 190, 7);
+}
+
+.card_stats2 .stats2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+.card_stats2 .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card_stats2 .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card_stats2 .value sup {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card_text2 p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* Card2_Ends */
+
+
+/* Card3_Starts */
+
+.card3 {
+    width: 300px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    margin-left: 73%;
+    margin-top: -500px;
+    border-radius: 18px;
+    display: grid;
+    grid-template-areas: "image" "text" "stats";
+    grid-template-rows: 210px 210px 80px;
+    grid-template-columns: 300px;
+    background: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.card_image3 {
+    grid-area: image;
+    background: url(../Cook/Resources/pexels-prince-photos-3054690.jpg);
+    background-size: cover;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    overflow: hidden;
+}
+
+.card_text3 {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card_text3 .date3 {
+    color: rgb(7, 190, 7);
+    font-size: 13px;
+}
+
+.card_text3 p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card_text3 h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card_stats3 {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: rgb(7, 190, 7);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card_stats3 .stats3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+.card_stats3 .type {
+    font-size: 11px; 
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card_stats3 .value {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card_stats3 .value sup {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Card3_ Ends */
+
+
+/* pararaph_Area starts*/
+
+.Whole_Content {
+    align-items: center;
+}
+
+.menu_content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.Ninja {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 670px;
+    height: 400px;
+}
+
+.pararaph_Area {
+    position: absolute;
+    height: 30%;
+    width: 35%;
+    margin-top: 10%;
+    margin-left: 32%;
+    color: #fff;
+}
+
+h4 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.Check_Out {
+    font-size: 14px;
+    text-align: center;
+    padding-top: -10%;
+}
+
+.menu_content ul {
+    list-style-type: none;
+    padding: 10px;
+    display: block;
+    line-height: 30px;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+.Dropdown_Menu label {
+    display: block;
+    cursor: pointer;
+    background: url(../Cook/Resources/Open.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding: 10px 0 10px 40px;
+    margin-left: 2%;
+}
+
+input#menu {
+    display: none;
+}
+
+
+/* Toogle */
+
+input:checked~label {
+    background: url(../Cook/Resources/close-1912235.png) no-repeat left center;
+    background-size: 30px 30px;
+}
+
+input:checked~.menu_content {
+    max-height: 100%;
+}
+
+
+/* pararaph_Area Ends */
+
+
+/* New_Section_Starts*/
+
+.New_Section {
+    margin-top: 30%;
+}
+
+.New_Section h1 {
+    position: relative;
+    margin-top: -400px;
+    margin-left: 450px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.New_Section h1:hover {
+    border: none;
+    color: #fff;
+    font-size: 100px;
+    position: absolute transition h1 50ms ease-in-out;
+    margin-left: 250px;
+}
+
+.New_Section h1 span {
+    color: #ff0;
+}
+
+.New_Section .New_image {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../Cook/Resources/pexels-los-muertos-crew-7772198.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin-top: 72%;
+}
+
+
+/* New_Section_Ends */
+
+
+/* More_Content Starts */
+
+.Workers {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 73%;
+    margin-left: 35%;
+}
+
+.Avatars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    margin-top: 82%;
+}
+
+.Undraw {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -19%;
+    height: 300px;
+    width: 220px;
+}
+
+.More_Content {
+    position: absolute;
+    width: 23%;
+    height: 63%;
+    margin-left: 5%;
+    margin-top: 37%;
+    transform: scale(1.0);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.More_Content_Pragraph {
+    padding: 30px;
+    font-size: 15px;
+}
+
+.Pepper {
+    font-size: 25px;
+    margin-left: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.More_Learning {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    margin-left: 69%;
+}
+
+
+/* 2_Starts */
+
+.Undraw_2 {
+    position: absolute;
+    margin-left: 72%;
+    margin-top: -28%;
+    height: 300px;
+}
+
+.More_Content_2 {
+    position: absolute;
+    width: 23%;
+    height: 63%;
+    margin-left: 35%;
+    margin-top: 37%;
+    transform: scale(1.0);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.More_Content_Pragraph_2 {
+    padding: 30px;
+    font-size: 15px;
+}
+
+.Pepper_2 {
+    font-size: 25px;
+    margin-left: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.More_Learning_2 {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    margin-left: 69%;
+}
+
+
+/* 3_Starts */
+
+.Undraw_3 {
+    position: absolute;
+    margin-left: 65%;
+    margin-top: -46%;
+    height: 420px;
+    width: 280px;
+}
+
+.More_Content_3 {
+    position: absolute;
+    width: 23%;
+    height: 63%;
+    margin-left: 66%;
+    margin-top: 37%;
+    transform: scale(1.0);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.More_Content_Pragraph_3 {
+    padding: 30px;
+    font-size: 15px;
+}
+
+.Pepper_3 {
+    font-size: 25px;
+    margin-left: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.More_Learning_3 {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    margin-left: 69%;
+}
+
+
+/* More_Content_Ends */
+
+
+/* Footer_Starts */
+
+.foot {
+    background: rgba(0, 0, 0, 0.2);
+    height: 50%;
+    padding: 5%;
+    margin-top: 20%;
+}
+
+.foot #WhatsApp {
+    color: rgb(7, 190, 7);
+    margin-left: 3%;
+    width: 30px;
+    height: 30px;
+}
+
+.foot #Instagram {
+    color: rgb(241, 9, 210);
+    width: 30px;
+    height: 30px;
+}
+
+.foot #Facebook {
+    color: rgb(62, 10, 250);
+    width: 30px;
+    height: 30px;
+}
+
+.foot #YouTube {
+    color: rgb(241, 9, 9);
+    width: 30px;
+    height: 30px;
+}
+
+.foot #Envelope {
+    color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Footer_Ends */
